@@ -1,0 +1,57 @@
+$primaryColor: #f05f40;
+$secondColor:#212567;
+
+*{
+ box-sizing: border-box;
+ ;
+
+
+}
+
+body{
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.container{
+    width: 80%;
+    margin: auto;
+    background-color: red;
+    overflow: hidden;
+}
+// Stylin header
+.w_f{
+
+    float: left;
+    width: 50%;
+   
+}
+
+header{
+  
+
+    .logo{
+
+        @extend .w_f;
+        color:#c9c5bd;
+    }
+
+    ul{
+        @extend .w_f;
+        
+        list-style: none; 
+        display:flex;
+        li {
+
+   
+            padding: 10px;
+            
+            a{
+
+                text-decoration: none;
+                color:#c9c5bd;
+                text-transform: uppercase;
+
+            }
+        }
+    }
+}
+// end of header
